@@ -1,0 +1,23 @@
+<% @tenants.each do |addTenant| %>
+  <li><%= addTenant %></li>
+<% end %>
+
+<form method="get" action="/">
+  <input type="search" name="name" placeholder="Search Name">
+  <input type="submit">
+</form>
+
+<form method="post" action="/">
+  <input type="text" name="name" placeholder="Tenant Name">
+  <input type="submit">
+</form>
+
+<form method="post" action="/">
+  <input type="text" name="age" placeholder="Tenant Age">
+  <input type="submit">
+</form>
+
+<form method="post" action="/">
+  <input type="text" name="gender" placeholder="Tenant Gender">
+  <input type="submit">
+</form>
