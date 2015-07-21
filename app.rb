@@ -18,8 +18,15 @@ get '/apartments' do
 end
 
 get '/apartments/:id' do
-  "Howdy"
-  # erb :apartments
+  @renters = 2
+  if @renters == 0
+    @apartment_status = "<a href='/apartments/:id'>ADDRESS</a> is SQFT square feet and has NUM_BEDS beds and NUM-BATHS baths. It costs MONTHLY_RENT per month."
+  elsif @renters == 1
+    @apartment_status = "<a href='/apartments/:id'>ADDRESS</a> is SQFT square feet and has NUM_BEDS beds and NUM-BATHS baths. It costs MONTHLY_RENT per month. RENTER lives in <a href='/apartments/:id'>ADDRESS</a>."
+  elsif @renters == 2
+    @apartment_status = "<a href='/apartments/:id'>ADDRESS</a> is SQFT square feet and has NUM_BEDS beds and NUM-BATHS baths. It costs MONTHLY_RENT per month. RENTER and RENTER live in <a href='/apartments/:id'>ADDRESS</a>."
+  end
+  erb :apartments
 end
 
 get '/apartments/:id/:tenants' do
