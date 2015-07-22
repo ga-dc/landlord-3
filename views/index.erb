@@ -1,0 +1,40 @@
+<p class="greeting">Welcome, landlord</p>
+
+<h2>List of apartments / details</h2>
+
+<% @apartments.each do |apartment| %>
+  <li><%= apartment %></li>
+<% end %>
+
+<h2>View an apartment's details</h2>
+
+<form method="get" action="/">
+  <input type="search" name="apartment_name" placeholder="Enter Apartment Name (GET)">
+  <input type="submit">
+</form>
+
+<h2>Add an apartment</h2>
+
+<form method="post" action="/">
+  <input type="text" name="apartment_name" placeholder="Apartment Name">
+  <input type="text" name="address" placeholder="Address">
+  <input type="text" name="monthly_rent" placeholder="Monthly rent">
+  <input type="text" name="sqft" placeholder="Square feet">
+  <input type="text" name="num_beds" placeholder="# beds">
+  <input type="text" name="num_baths" placeholder="# baths">
+  <input type="text" name="renters" placeholder="renters">
+  <input type="submit">
+</form>
+
+<h2>Add a tenant to an apartment</h2>
+
+<form method="post" action="/">
+  <input type="text" name="tenant_name" placeholder="Tenant Name">
+  <input type="text" name="apartment_name" placeholder="Apartment Name">
+  <input type="submit">
+</form>
+
+<!-- * List all apartments
+* View an apartment's details
+* Add an apartment
+* Add a tenant to an apartment -->
