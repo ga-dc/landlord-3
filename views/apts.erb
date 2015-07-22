@@ -1,6 +1,7 @@
 <h1>Apartments</h1>
 <ul>
-  <% @apts.each do |apt| %>
-  <li><%= apt %>
+  <% @apartments.each do |apartment| %>
+  <li><%= "#{apartment} is occupied" %>
+    <!-- Can expand when apartment objects available -->
   <%end%>
 </ul>
