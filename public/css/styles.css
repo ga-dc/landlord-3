@@ -1,8 +1,9 @@
 body{
-  color: aquamarine;
+  color: cadetblue;
   background-color: lemonchiffon;
 }
 
 h1{
-  color: aquamarine;
+  color: steelblue;
+  text-decoration: underline;
 }

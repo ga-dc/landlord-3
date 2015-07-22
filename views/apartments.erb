@@ -1,2 +1,9 @@
 <h1>TESTING APARTMENTS</h1>
-<%= @@apartments %>
+<ul>
+  <li>Apartment 1: 123 Main Street, $300, 350, 2, 1, ["Stephen G", 23, Male]</li>
+Trying to dynamically list the elements in $apartments:
+<% $apartments.each do |apartment| %>
+  <li><%= puts "#{apartment.address}" %></li>
+<% end %>
+
+</ul>
