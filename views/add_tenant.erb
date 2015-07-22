@@ -1,0 +1,7 @@
+<%@tenants.each do |tenant|%>
+  <li><%= tenant %></li>
+<%end%>
+<form method="post" action="/add_tenant">
+  <input type="text" name="new_tenant" placeholder="Tenant Name">
+  <input type="submit">
+<a href="/">Home</a>

@@ -1,0 +1,8 @@
+<%@apartments.each do |apartment|%>
+  <li><%= apartment %></li>
+<%end%>
+<form method="post" action="/add_apartment">
+  <input type="text" name="new_apartment" placeholder="Apartment Address">
+  <input type="submit">
+</form>
+<a href="/">Home</a>
