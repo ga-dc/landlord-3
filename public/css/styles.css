@@ -1,0 +1,26 @@
+body {
+  background: #FCFFF5;
+  margin-top: 0px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 0 10px;
+}
+nav{
+  margin-bottom: 10px;
+}
+
+nav a{
+  display: block;
+  margin-bottom: 5px
+}
+
+ol li {
+  list-style-type: none;
+}
+
+input[type="text"]{
+  display: block;
+  margin: 5px;
+}
