@@ -1,0 +1,15 @@
+These are all apartments
+
+<% @apartments.each do |apartment| %>
+  <li><%= apartment %></li>
+<% end %>
+
+<form method="get" action="/apartments">
+  <input type="search" name="apartment_name" placeholder="Get Apartment Name">
+  <input type="submit">
+</form>
+
+<form method="post" action="/">
+  <input type="text" name="apartment_name" placeholder="Apartment Name">
+  <input type="submit">
+</form>
