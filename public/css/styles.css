@@ -1,0 +1,17 @@
+body {
+  background: lemonchiffon;
+  text-align: center;
+}
+a {
+  display: block;
+  margin: 20px auto;
+  background: red;
+  border: 3px solid rgb(255,120,120);
+  border-radius: 20px;
+  width: 180px;
+  color: black;
+}
+li {
+  text-align: left;
+  font-size: 2em;
+}

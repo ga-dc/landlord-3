@@ -1,0 +1,10 @@
+<ol>
+<%@apartments.each do |apartment|%>
+  <li><%= apartment %></li>
+<%end%>
+</ol>
+<form method="post" action="/apartment_number">
+  <input type="text" name="apartment_number" placeholder="Apartment Number">
+  <input type="submit">
+</form>
+<a href="/">Home</a>
