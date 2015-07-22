@@ -1,4 +1,4 @@
-<% if (@route) %>
+<% if (@apt_id) %>
 
 
 <h1> Here is apartment </h1>
@@ -10,4 +10,10 @@
   <% @apartments.each do |apartment| %>
     <li><%= apartment %></li>
   <% end %>
+
+  <form method="get" action="/apartments">
+  <input type="search" name="apt" placeholder="apartment">
+  <input type="submit">
+</form>
+
 <% end %>

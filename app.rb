@@ -8,8 +8,12 @@ get "/" do
 end
 
 get "/apartments" do
-  @apartments = $apartments
-  erb :apartments
+  if params[:apt]
+    redirect "/apartments/#{params[:apt]}"
+  else
+    @apartments = $apartments
+    erb :apartments
+  end
 end
 
 get "/apartments/new" do
@@ -21,8 +25,8 @@ post "/apartments" do
   redirect "/apartments"
 end
 
-get "/apartments/:route" do
-  @route = params[:route]
+get "/apartments/:apt_id" do
+  @apt_id = params[:apt_id]
   @apartments = $apartments
   erb :apartments
 
