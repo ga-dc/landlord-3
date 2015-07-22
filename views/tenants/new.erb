@@ -1,0 +1,11 @@
+<% @tenants.each do |tenants| %>
+  <li><%= tenants %></li>
+<% end %>
+
+
+<form method="get" action="/">
+  <input type="text" name="tenant" placeholder="What's your name?">
+  <input type="text" name="rent" placeholder="Enter apartment rent">
+  <input type="text" name="sqft" placeholder="Enter apartment sqft">
+  <input type="submit">
+</form>
