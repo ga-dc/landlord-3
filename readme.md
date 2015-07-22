@@ -2,6 +2,8 @@
 
 ## Part 3 - Sinatra Views and Templates
 
+**Please time box this to 2 hours!**
+
 **Do not connect sinatra to the DB.** That's tomorrow's hw. Focus on creating the routes and views.
 Hardcode some sample html for each of the views.
 
