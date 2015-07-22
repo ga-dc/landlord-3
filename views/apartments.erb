@@ -1,0 +1,13 @@
+<% if (@route) %>
+
+
+<h1> Here is apartment </h1>
+<%= @apartments[@apt_id.to_i] %>
+
+
+<% else %>
+  <h1> Here are apartments </h1>
+  <% @apartments.each do |apartment| %>
+    <li><%= apartment %></li>
+  <% end %>
+<% end %>
