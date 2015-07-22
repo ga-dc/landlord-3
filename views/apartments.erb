@@ -1,0 +1,38 @@
+<% if @apartments == "a" %>
+<h1>Unit is available - Apt A is 750 sqft and has 1 bed and 1 bath. It costs $2500 a month</h1>
+<a href="/apartments">View All Apartments</a>
+<% end %>
+
+<% if @apartments == "b" %>
+<h1>James and Brian live in Apt B. Lease ends Dec 2016</h1>
+<a href="/apartments">View All Apartments</a>
+<% end %>
+
+<% if @apartments == "c" %>
+<h1>Jen and Chris live in Apt C. Lease ends Nov 2015</h1>
+<a href="/apartments">View All Apartments</a>
+<% end %>
+
+<% if @apartments == "d" %>
+<h1>Unit is available - Apt D is 1500 sqft and has 2 bed and 2 bath. It costs $4000 a month</h1>
+<a href="/apartments">View All Apartments</a>
+<% end %>
+
+<% if @apartments == "1" %>
+<h1>The Avery</h1>
+<ul>
+<li>123 Mass Ave. Washington DC 20004</li>
+<li>1 Bedroom - 750 sqft, 1 Bath - $2500 a month</li>
+<li>2 Bedroom - 1500 sqft, 2 Bath - $4000 a month</li>
+</ul>
+<a href="/">Apartment Guide</a>
+<% end %>
+
+<% if @apartments == "new" %>
+<h1>Apply to Rent an Apartment</h1>
+<form method='post' action='/apartments/applicants'>
+  <input type='text' name='person' placeholder="First and Last Name">
+  <input type="submit">
+</form>
+<a href="/">Apartment Guide</a>
+<% end %>
