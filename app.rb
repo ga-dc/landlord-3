@@ -16,3 +16,11 @@ end
 get "/apartments/:id" do
     erb :"apartment/details"
 end
+
+get "/apartments/:id/tenants" do
+    erb :"tenant/tenants"
+end
+
+get "/apartments/:id/tenants/new" do
+    erb :"tenant/new"
+end
