@@ -6,9 +6,9 @@
 </head>
 <body>
 <%= yield %>
- <a href="/apartments">All Apts</a>
- <a href="/apartments">Apt Details</a>
+ <!-- <a href="/apartments">All Apts</a> -->
+ <!-- <a href="/apartments">Apt Details</a>
  <a href="/apartments">Add an Apt</a>
- <a href="/apartments">Add tenant to Apt</a>
+ <a href="/apartments">Add tenant to Apt</a> -->
 </body>
 </html>
