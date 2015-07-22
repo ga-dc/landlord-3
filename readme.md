@@ -13,7 +13,7 @@ Create the (RESTful) routes and views for the following items:
   * List all apartments
   * View an apartment's details
   * Add an apartment
-  * Add a tenant to an apartment
+  * List tenants
 - The route `GET /apartments` should list all apartments
   * If the apartment is unoccupied(no tenants) you should say something like:
     `Apt 1A is 750 sqft and has 1 bed and 1 bath. It costs $2500 a month`
