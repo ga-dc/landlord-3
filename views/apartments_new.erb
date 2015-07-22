@@ -1,0 +1,11 @@
+<h1>Add New Apartments</h1>
+<!-- #     List all apartments -->
+<% @apartments.each do |apartment| %>
+  <li><%= apartment %></li>
+<% end %>
+
+<!-- #     Add an apartment -->
+<form method="post" action="/apartments_new">
+  <input type="text" name="apartment_name" placeholder="New Apartment Name">
+  <input type="submit">
+</form>

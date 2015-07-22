@@ -1,0 +1,11 @@
+<h1>Add New Tenants</h1>
+<!-- #     List all apartments -->
+<% @tenants.each do |tenant| %>
+  <li><%= tenant %></li>
+<% end %>
+
+<!-- #     Add a tenant -->
+<form method="post" action="/tenants_new">
+  <input type="text" name="tenant_name" placeholder="New Tenant Name">
+  <input type="submit">
+</form>
