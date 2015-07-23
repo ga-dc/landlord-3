@@ -3,8 +3,8 @@
 # If the apartment is occupied by a tenant, you should say something like: Mikael lives in Apt 1A -->
 <h2>All Apartments</h2>
 
-<% @apartment_id.each do |i| %>
-	<p><% i.apartment %> is <% i.sqft %> sqft and has <% i.beds %> bed and <% i.baths %> bath(s). It costs $<% i.cost %> a month.</p>
+<% @apartments.each do |i| %>
+	<p><%= i.apartment %> is <%= i.sqft %> sqft and has <%= i.beds %> bed and <%= i.baths %> bath(s). It costs $<%= i.cost %> a month.</p>
 <% end %>
 
 
