@@ -2,7 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 
 get "/" do
-	erb: index
+	erb :index
 end
 
 get "/apartments" do
@@ -22,7 +22,7 @@ get "/apartments/1/tenants" do
 	erb :apartments_1_tenants
 end
 
-get "/apartments/1/tenants/new" 
+get "/apartments/1/tenants/new" do
 		@new = tenant
 	erb :apartments_1_tenants_new
 end
