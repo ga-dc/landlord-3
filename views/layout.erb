@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<!--   <link rel="stylesheet" type="text/css" href="/css/styles.css">
+ --></head>
+<body>
+  <div>
+    <header>
+      <nav>
+        <ul>
+          <!-- List several menu options. -->
+          <li><a href="/apartments">View all apartments</a></li>
+          <li><a href="/apartments/details">View apartment's details</a></li>
+          <li><a href="/apartments/new">Add an apartment.</a></li>
+<!--           <li><a href='/apartments/1A/tenants'>List tenants for sample apartment</a></li>
+ -->          <li><a href="/tenants/new">Add a tenant to an apartment.</a></li>
+        </ul>
+      </nav>
+    </header>
+    <%= yield %>
+  </div>
+</body>
+</html>
