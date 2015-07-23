@@ -1,0 +1,6 @@
+<h1><%= @header_route %></h1>
+<% $apartments.each do |apartment| %>
+  <ul><li><a href='/apartments/<%= apartment %>'><%= apartment %></a></li></ul>
+<% end %>
+
+<a class=link id=return href='/'>Return to building</a>
