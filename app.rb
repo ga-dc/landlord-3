@@ -2,43 +2,24 @@ require "sinatra"
 require "sinatra/reloader"
 
 get "/" do
-  erb :index
+  erb :"index"
 end
 
-get "/apt_list" do
+get "/apartments/list" do
   @apt_list = []
   erb :apt_list
 end
 
-get "/apt_details" do
+get "/apartments/details" do
   erb :apt_details
 end
 
-post "/add_apt" do
+get "/apartments/apt" do
+  input = params[:add]
   erb :add_apt
 end
 
-post "/add_tenant" do
+get "/tenants/addtenant" do
+  input = params[:addtenants]
   erb :add_tenant
 end
-
-# $instructors = ["Jesse","Adrian","Matt","Adam","Andy"]
-#
-# get "/" do
-#   if params[:instructor_name]
-#     @instructors = []
-#     $instructors.each do |instructor|
-#       if instructor.match( params[:instructor_name])
-# 	@instructors << instructor
-#       end
-#     end
-#   else
-#     @instructors = $instructors
-#   end
-#   erb :index
-# end
-#
-# post "/" do
-#   $instructors << params[:instructor_name]
-#   redirect "/"
-# end
