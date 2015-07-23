@@ -12,19 +12,31 @@ end
 get "/apartments" do
   # List all the apartments.
   # Connect to the erb file path.
-  erb :"/apartment/index"
+  erb :"/apartments/index"
 end
 
-get "/aparments/new" do
+get "/apartments/details" do
+  # Show info for a single apartment.
+  # Connect to the erb file path.
+  erb :"apartments/details"
+end
+
+get "/apartments/new" do
   # Show a form for adding a new apartment.
   # Connect to the erb file path.
   erb :"/apartments/new"
 end
 
-get "/apartments/1" do
+get "/tenants/new" do
+  # Show a form for adding a new apartment.
+  # Connect to the erb file path.
+  erb :"/tenants/new"
+end
+
+get "/apartments/1A" do
   # Show info for a single apartment.
   # Connect to the erb file path.
-  erb :"apartments/show"
+  erb :"apartments/details"
 end
 
 get "/apartments/1/tenants" do
