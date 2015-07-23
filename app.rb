@@ -22,7 +22,8 @@ get "/apartments/new" do
   erb :"apartments/new"
 end
 
-get "/tenants" do
+get "/tenants/:id" do
+  @apt_id = params[:id]
   erb :"tenants/index"
 end
 
