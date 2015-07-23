@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      WELCOME 2 SINATRA APARTMENTS
+    </title>
+  </head>
+  <body>
+    <a href ='/apartments'>Show all Apartments </a>
+    <a href ='/apartments/new'>Add a new Apartment Opening</a>
+    <a href = '/apartments/:id'>Show Apartment #</a>
+    <a href = '/apartments/:id/tenants'>List Tenants for Apartment #</a>
+    <a href = '/apartments/:id/tenant/new'>Add new Tenants for Aparartment</a>
+    <!-- note that :id would need some sort of input to work or assume
+    they'll be just typing in path manually otherwise just switch
+    to hardcode number path -->
+    <%= yield %>
+  </body>
+</html>
