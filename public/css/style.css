@@ -1,0 +1,29 @@
+*{
+  background-color: white;
+  color: black;
+  font-family: helvetica;
+  text-align: center;
+}
+a{
+  padding: 10px;
+  border: 1px solid none;
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  font-size: 35px;
+}
+form{
+  display: block;
+  margin: 20px;
+}
+
+ul{
+
+}
+li{
+    margin: 20px;
+    display: inline;
+}
+nav{
+  display: inline-block;
+}
