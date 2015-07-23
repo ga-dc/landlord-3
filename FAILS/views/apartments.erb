@@ -1,0 +1,12 @@
+apartments.erb
+
+<% index = -1 %>
+<% @@apartments.each do |apartment| %>
+	<% index = index + 1 %>
+	<% @address = apartment[":address"] %>
+
+<!--   <li><a href="apartments/<%= index %>" ><%= @address %> == <%= index %></a></li> -->  
+		<li><a href="apartments/<%= index %>" ><%= apartment %> == <%= index %></a></li>
+		
+<% end %>
+

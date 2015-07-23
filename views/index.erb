@@ -1,7 +1,6 @@
-index.erb
+# ======= views/index.erb<br><br>
 
-<a href="apartments/" > see all apartments</a><br><br>
-
-<a href="apartments/new" > add new apartment</a><br><br>
-
-<a href="tenent/new" > add new tenent</a>br><br>
+<a href="/apartments">List all apartments</a><br>
+<a href="/apartments/"<%= @apt_num %> >View an apartments details</a><br>
+<a href="/apartments/new"> Add an apartment</a><br>
+<a href="/apartments/"<%= @apt_num %>"/tenants/new">Add a tenant to an apartment</a><br>
