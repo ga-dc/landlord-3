@@ -1,0 +1,9 @@
+Apartment Listings
+<form method='post' action='/'>Add New Apartments>=</>
+  <input type='text' name='address' placeholder= "address">
+  <input type='text' name='monthly_rent' placeholder= "rent">
+  <input type='text' name='sqft' placeholder= "sqft">
+  <input type='text' name='num_beds' placeholder= "# of bedrooms">
+  <input type='text' name='num_baths' placeholder= "# of baths">
+  <input type= "submit">
+</form>
