@@ -4,9 +4,6 @@ require 'sinatra/reloader'
 @apartments = []
 
 get '/' do
-    @title = "Welcome to the landlord command center! What would you like to do today?"
-    @apartments = "/apartments"
-    @tenants = "/tenants"
     erb :index
 end
 
@@ -24,7 +21,7 @@ post '/apartments/new' do
     redirect '/apartments'
 end
 
-get '/apartments/:id' do
+get '/apartments/3' do
     erb :"apartments/details"
 end
 
@@ -34,4 +31,8 @@ end
 
 get '/tenants/new' do
     erb :"tenants/new"
+end
+
+get '/apartments/3/tenants' do
+    erb :"tenants/details"
 end
