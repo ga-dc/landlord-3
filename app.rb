@@ -9,7 +9,12 @@ get "/apartments" do
   erb :"apartments/index"
 end
 
-get "/apartments/info" do
+# get "/apartments/info" do
+#   erb :"apartments/info"
+# end
+
+get "/apartments/:id" do
+  @apt_id = params[:id]
   erb :"apartments/info"
 end
 
