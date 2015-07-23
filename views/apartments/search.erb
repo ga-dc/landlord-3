@@ -1,0 +1,12 @@
+<h1><%= @header_route %></h1>
+<% @apartments.each do |apartment| %>
+  <ul><li><a href='/apartments/<%= apartment %>'><%= apartment %></a></li></ul>
+<% end %>
+
+<form method="get" action="/apartments/search/">
+  <input type="search" name="apartment_name" placeholder="Search Apartments">
+  <input type="submit">
+</form>
+
+<a class=link id=return href='/apartments/search/'>Return to search</a>
+<a class=link id=return href='/'>Return to building</a>
