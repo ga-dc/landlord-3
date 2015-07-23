@@ -9,24 +9,20 @@ get "/apartments" do
   erb :"apartments/index"
 end
 
-# get "/apartments/info" do
-#   erb :"apartments/info"
-# end
-
 get "/apartments/:id" do
   @apt_id = params[:id]
-  erb :"apartments/info"
-end
-
-get "/apartments/new" do
-  erb :"apartments/new"
+  if @apt_id == "new"
+    erb :"apartments/new"
+  else
+    erb :"apartments/info"
+  end
 end
 
 get "/tenants/:id" do
   @apt_id = params[:id]
-  erb :"tenants/index"
-end
-
-get "/tenants/new" do
-  erb :"tenants/new"
+  if @apt_id == "new"
+    erb :"tenants/new"
+  else
+    erb :"tenants/index"
+  end
 end
