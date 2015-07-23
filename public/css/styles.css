@@ -1,0 +1,16 @@
+body {
+  background-color: #D6FFD6;
+  color: #141A14;
+  padding-top: 20px;
+}
+
+a {
+  display: block;
+  color: #141A14;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+li{
+  font-size: 24px;
+}
