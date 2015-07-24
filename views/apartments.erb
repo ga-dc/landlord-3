@@ -1,0 +1,10 @@
+<!-- # List all apartments
+# If the apartment is unoccupied(no tenants) you should say something like: Apt 1A is 750 sqft and has 1 bed and 1 bath. It costs $2500 a month
+# If the apartment is occupied by a tenant, you should say something like: Mikael lives in Apt 1A -->
+<h2>All Apartments</h2>
+
+<% @apartments.each do |i| %>
+	<p><%= i.apartment %> is <%= i.sqft %> sqft and has <%= i.beds %> bed and <%= i.baths %> bath(s). It costs $<%= i.cost %> a month.</p>
+<% end %>
+
+
