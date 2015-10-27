@@ -1,6 +1,6 @@
-# Landlord Part 3
+# Landlord - Sinatra Views and Templates
 
-## Part 3 - Sinatra Views and Templates
+## Sinatra Views and Templates
 
 **Please time box this to 2 hours!**
 
